@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {element} from 'protractor';
+//import {element} from 'protractor';
 
 @Component({
   selector: 'app-nav-bar',
@@ -32,38 +32,38 @@ export class NavBarComponent {
 
 
     // event listeners
-    welcomeRef.addEventListener('click', navigateWelcome, false);
-    techRef.addEventListener('click', navigateTech, false);
-    eduRef.addEventListener('click', navigateEdu, false);
-    expRef.addEventListener('click', navigateExp, false);
-    contactRef.addEventListener('click', navigateContact, false);
+    welcomeRef!.addEventListener('click', navigateWelcome, false);
+    techRef!.addEventListener('click', navigateTech, false);
+    eduRef!.addEventListener('click', navigateEdu, false);
+    expRef!.addEventListener('click', navigateExp, false);
+    contactRef!.addEventListener('click', navigateContact, false);
 
 
 
 
     // functions
     // tslint:disable-next-line:typedef
-    function navigateWelcome(e) {
-      welcomeSection.scrollIntoView({behavior: 'smooth'});
+    function navigateWelcome(_e: any) {
+      welcomeSection!.scrollIntoView({behavior: 'smooth'});
     }
 
     // tslint:disable-next-line:typedef
-    function navigateTech(e) {
-      techSection.scrollIntoView({behavior: 'smooth'});
+    function navigateTech(_e: any) {
+      techSection!.scrollIntoView({behavior: 'smooth'});
     }
     // tslint:disable-next-line:typedef
-    function navigateEdu(e) {
-      eduSection.scrollIntoView({behavior: 'smooth'});
-    }
-
-    // tslint:disable-next-line:typedef
-    function navigateExp(e) {
-      expSection.scrollIntoView({behavior: 'smooth'});
+    function navigateEdu(_e: any) {
+      eduSection!.scrollIntoView({behavior: 'smooth'});
     }
 
     // tslint:disable-next-line:typedef
-    function navigateContact(e) {
-      contactSection.scrollIntoView({behavior: 'smooth'});
+    function navigateExp(_e: any) {
+      expSection!.scrollIntoView({behavior: 'smooth'});
+    }
+
+    // tslint:disable-next-line:typedef
+    function navigateContact(_e: any) {
+      contactSection!.scrollIntoView({behavior: 'smooth'});
     }
 
 
