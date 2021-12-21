@@ -30,7 +30,7 @@
           id="email"
           class="form-control input">
         <div class="alert" *ngIf="email.touched && !email.valid">
-          <div class="alert" *ngIf="email.errors.required">Email Is Required</div>
+          <div class="alert" *ngIf="email.errors?.['required']">Email Is Required</div>
           <!--<div class="alert">Email must be in correct format</div>-->
          </div>
       </div>
@@ -47,8 +47,8 @@
           class="textarea"
           id="message"></textarea>
         <div class="alert" *ngIf="textarea.touched && !textarea.valid">
-          <div class="alert" *ngIf="textarea.errors.required">Content is required</div>
-          <div class="alert" *ngIf="textarea.errors.minlength">Content must be greater than 10 character</div>
+          <div class="alert" *ngIf="textarea.errors?.['required']">Content is required</div>
+          <div class="alert" *ngIf="textarea.errors?.['minlength']">Content must be greater than 10 character</div>
         </div>
       </div>
 
