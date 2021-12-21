@@ -7,5 +7,5 @@ export class Worklist {
   id!: number;
   companyname!: string; 
   jobrole!: string;
-  description!: object;
+  description!: any;
 }
