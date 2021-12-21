@@ -1,0 +1,123 @@
+<!--section main-->
+<section class="main-section" id="main-section">
+  <div class="container-fluid">
+    <div class="flex-container">
+      <div class="main-container">
+        <div class="welcome">
+          <p class="welcome-msg"> WELCOME TO MY WEBSITE</p>
+          <p class="title-position"> Developer - Student. </p>
+          <p class="lorem"> Hello visitor, my name is Jordan. An intermediate web developer looking for experience
+            in the tech field for the surrounding area of Ontario. I'm interested in growing my skill set to fit the
+            needs of a job. </p>
+        </div>
+      </div>
+      <div class="welcome-img-container">
+        <img src="assets/img/undraw_develop_app_re_bi4i.svg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--section tech-->
+<section class="technology-section" id="technology-section">
+  <div class="flex-container-2">
+    <div class="technology-container">
+      <div class="logo-container">
+      <!--programming tech images -->
+      <img src="assets/img/html_logo.jpg" width="160" class="html-logo">
+      <img src="assets/img/angular_logo.png" width=100 class="angular-logo">
+      <img src="assets/img/java_logo.png" width=100 class="java-logo">
+      <img src="assets/img/jquery_logo.png" width=100 class="jquery-logo">
+      <img src="assets/img/javascript_logo.jpg" width=100 class="javascript-logo">
+      <img src="assets/img/sql_logo.jpg" width=100 class="sql-logo">
+      <img src="assets/img/css_logo.png" width=100 class="css-logo">
+      <img src="assets/img/csharp_logo.jpg" width=100 class="csharp_logo">
+      <img src="assets/img/linux_logo.png" width="100" class="linux_logo">
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- education section  -->
+<section class="education-section" id="education-section">
+  <div class="flex-container-3">
+    <div class="container-fluid">
+      <div class="education-container">
+        <div class="conestoga">
+          <p class="school">Conestoga College<p>
+          <p class="course">Computer Programming - Ongoing</p>
+          <ul>
+            <li> Object-oriented analysis, design, agile methodologies and programming techniques.</li>
+            <li> Utilizing the the latest versions of Microsoft, Java, C# and open source software.</li>
+            <li> Courses for mathematics, accounting, communications support and IT.</li>
+          </ul>
+        </div>
+        <div class="ontario-learn">
+          <p class="school"> Ontario Learn</p>
+          <p class="course"> Mobile Applications Development - Ongoing</p>
+          <ul>
+            <li>Creating Java applications and Java applets using the Java programming language.</li>
+            <li>Using MySQL to create, modify, implement, and maintain MySQL and MSSQL databases.</li>
+            <li>Programming at an intermediate level, using the JavaScript programming language.</li>
+          </ul>
+        </div>
+    </div>
+      <div class="education-img-container">
+        <img src="assets/img/studying_img.svg">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- expoerience section -->
+<section class="experience-section">
+  <div id="experience-section"></div>
+  <div class="flex-container-4">
+    <div class="experience-container">
+      <div *ngFor="let position of worklist"
+           [ngClass]="{
+          'pronavigator': position.companyname === 'Pronavigator',
+          'rowlands': position.companyname === 'Rowlands'
+                      }">
+        <p> Company: {{ position.companyname }}</p>
+        <p> Role: {{ position.jobrole}}</p>
+        <li>{{ position.description.point1 }}</li>
+        <li>{{position.description.point2}}</li>
+        <li>{{position.description.point3}}</li>
+        <li>{{position.description.point4}}</li>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--form to fill out destination email source email
+  body of email attatchments contact information-->
+<section class="contact" style="" id="contact-section">
+    <app-contact></app-contact>
+</section>
+
+<section class="footer-section">
+  <div class="flex-container-5">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="right-footer">
+          <p> Jordan Trelford </p>
+          <div class="email-tag">
+            <img src="assets/img/email-icon.png" width="40px"><p class="email-footer-text"> quantum1random@gmail.com</p>
+          </div>
+          <div class="phone-tag">
+            <img src="assets/img/phone-icon.png" width="40px"><p class="phone-footer-text"> (519) 353 8722 </p>
+          </div>
+          <div class="github-icon">
+           <img src="assets/img/github-icon.png" width="40px" (click)="githubWindow()" >
+         </div>
+
+        <div class="left-footer">
+          <p class="text-footer"> Powered By </p><img class="angular-image" src="assets/img/angular_logo.png" width="40px">
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

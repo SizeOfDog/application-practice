@@ -1,0 +1,60 @@
+<div class="flex-container-5">
+  <script src="mail.js"></script>
+  <div class="container">
+    <!--contact form-->
+    <form class="contact-form" #contactForm="ngForm"  (ngSubmit)="onSubmit(contactForm)" >
+      <!--name-->
+      <div class="form-group">
+        <label for="companyName" class="label"> Company Name :</label>
+        <input required
+               ngModel
+               name="companyName"
+               #companyName="ngModel"
+               id='companyName'
+               type="text"
+               class="form-control input">
+        <div class="alert" *ngIf="companyName.touched && !companyName.valid">
+          Name is required</div>
+      </div>
+
+      <!--email-->
+      <div class="form-group">
+        <label for="email" class="label"> Email : </label>
+        <input
+          required
+          ngModel
+          name="email"
+          #email="ngModel"
+
+          type="text"
+          id="email"
+          class="form-control input">
+        <div class="alert" *ngIf="email.touched && !email.valid">
+          <div class="alert" *ngIf="email.errors.required">Email Is Required</div>
+          <!--<div class="alert">Email must be in correct format</div>-->
+         </div>
+      </div>
+
+      <!--message-->
+      <div class="form-group">
+        <label class="label">Message  : </label><br>
+        <textarea
+          ngModel
+          required
+          ng-minlength="10"
+          name="textarea"
+          #textarea="ngModel"
+          class="textarea"
+          id="message"></textarea>
+        <div class="alert" *ngIf="textarea.touched && !textarea.valid">
+          <div class="alert" *ngIf="textarea.errors.required">Content is required</div>
+          <div class="alert" *ngIf="textarea.errors.minlength">Content must be greater than 10 character</div>
+        </div>
+      </div>
+
+      <!--submit button-->
+      <button class="btn is-large is-warning" type="submit"> Send</button>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,289 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@media (max-width:800px) {
+  .welcome, .welcome-img-container {
+    flex: 100%;
+  }
+
+  .welcome-img-container {
+    float:left;
+  }
+}
+
+.flex-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  min-height: 600px;
+  font-family: poppins;
+
+}
+
+.welcome-img-container img {
+  width: 400px;
+  height: 400px;
+  margin-left: 150px;
+  margin-top: 100px;
+
+}
+
+.welcome-img-container {
+  flex: 1;
+  margin-left: auto;
+  flex: 50%;
+
+}
+
+.main-container {
+  flex: 1;
+  flex: 50%;
+  margin-left: auto;
+}
+
+.flex-container > div {
+}
+
+.welcome {
+  float: right;
+  margin-top: 200px;
+  width: 500px;
+}
+
+.title-position {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.welcome-msg {
+  color: gray;
+  font-weight: lighter;
+}
+
+.lorem {
+  color: gray;
+  font-weight: lighter;
+}
+
+
+/* logo container */
+
+
+@media (max-width: 800px) {
+  .angular-logo, .jquery-logo, .sql-logo, .csharp_logo,
+  .html-logo, .java-logo, .javascript-logo, .css-logo {
+    flex: 100%;
+  }
+}
+
+.flex-container-2 {
+  display: flex;
+  min-height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+
+.logo-container {
+  margin-top: 100px;
+}
+
+.html-logo,  .java-logo,
+ .javascript-logo, .css-logo  {
+  margin-top: 150px;
+  flex: 12.5%
+}
+
+.angular-logo,.jquery-logo,
+.sql-logo, .csharp_logo{
+  margin-bottom: 150px;
+  flex: 12.5%
+}
+
+/*
+education section style
+ */
+.flex-container-3 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  min-height: 650px;
+  font-family: poppins;
+  background-color: #f1f1f1;
+  justify-content: space-evenly;
+}
+
+
+.education-img-container img {
+  height: 400px;
+  width: 400px;
+}
+
+.education-img-container {
+
+  float: left;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.education-container {
+  float: left;
+  width: 500px;
+  margin-top: 100px;
+
+}
+
+.school {
+  color: darkgrey;
+}
+
+.course {
+  color: black;
+  size: 20px;
+  font-weight: bold;
+}
+
+.ontario-learn {
+  padding-top: 20px;
+}
+
+.ontario-learn li , .conestoga li {
+  list-style-type: none;
+  padding-top: 5px;
+  color: darkgrey;
+  padding-right: 100px;
+}
+
+/*
+experience section style
+*/
+
+@media (max-width: 800px) {
+  .pronavigator, .rowlands {
+    flex: 100%;
+  }
+
+}
+
+.flex-container-4 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  min-height: 600px;
+  font-family: poppins;
+  justify-content: center;
+
+}
+
+.pronavigator li , .rowlands li {
+  padding-bottom: 10px;
+  color: gray;
+}
+
+/*experience boxes*/
+.rowlands, .pronavigator {
+  flex: 50%;
+  padding: 40px 20px 40px 30px;
+  color: black;
+  border-radius: 10px;
+  width: 375px;
+  border-width: 0.5px;
+  border-style: solid;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  background-color: #f1f1f1;
+  float: left;
+  height: 300px;
+  list-style-type: none;
+  border-color: lightgray;
+}
+
+/*
+form section
+*/
+.contact {
+  background-color: #f1f1f1;
+  min-height: 300px;
+  font-family: poppins;
+}
+
+/*
+footer section
+*/
+
+@media (max-width: 800px) {
+  .left-footer, .right-footer {
+    flex: 100%;
+  }
+}
+
+.flex-container-5 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  min-height: 200px;
+  font-family: poppins;
+  justify-content: center;
+
+}
+
+.footer-container {
+  width: 1000px;
+}
+
+.right-footer {
+  flex: 50%;
+  float: right;
+  height: 100px;
+  font-family: poppins;
+  margin-top: 20px;
+}
+
+.email-tag {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.phone-tag {
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.left-footer {
+  float: left;
+  margin-top: 50px;
+
+}
+
+.text-footer {
+  flex: 50%;
+  float: left;
+  margin-top: 10px;
+  font-weight: bold;
+  font-family: poppins;
+}
+
+.email-footer-text, .phone-footer-text {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.left-footer img {
+  margin-left: 5px;
+
+}
+
+.github-icon:hover img  {
+  opacity: 0.3;
+  cursor: pointer;
+}
+

@@ -1,0 +1,28 @@
+<div ng-app="">
+  <!--navbar brand-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <!--Navbar brand-->
+    <div class="container-fluid">
+
+        <!--NavBar Links-->
+        <ul>
+          <!--left navbar-->
+          <div class="left-navbar">
+            <li><a> Jordan </a></li>
+          </div>
+
+          <!--right navbar-->
+          <div class="right-navbar" (click)="navigate()">
+            <li><a href="javascript:void(0)" id="welcomeRef" ><span >Welcome</span> </a></li>
+            <li><a href="javascript:void(0)" id="techRef"><span>Technologies</span> </a></li>
+            <li><a href="javascript:void(0)" id="eduRef" ><span>Education</span></a></li>
+            <li><a href="javascript:void(0)" id="expRef"><span>Experience</span> </a></li>
+            <li><a href="javascript:void(0)" id="contactRef" ><span>Contact</span> </a></li>
+          </div>
+
+        </ul>
+    </div>
+  </nav>
+</div>
+
